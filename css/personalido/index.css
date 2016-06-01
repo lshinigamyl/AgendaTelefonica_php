@@ -1,0 +1,56 @@
+#btnback, #btnnext{
+    border-radius: 50%;
+}
+#imagen{
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+#capa2{
+    position: relative;
+    margin: 0px auto 0px auto;
+    width: auto;
+    height: 70%;
+}
+#capa{
+    background: url(../..//img/paradox.jpg) no-repeat fixed center;
+    margin: auto;
+    background-size: cover; 
+    filter: blur(6px);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    overflow: hidden;
+}
+#fondo{
+    margin: auto;
+    position: relative ;
+    height: 100%;
+    z-index: 2;
+}
+body{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#otra{
+    height: 30%;
+}
+
+th{
+    border: 1px solid black;
+    
+    
+}
+
+table{
+    width: 100%;
+}
+
+//#contenedor{
+   // width: 90%;
+    //height: 50%;
+  //  margin: 0px;
+//}
