@@ -39,10 +39,8 @@ body{
     height: 30%;
 }
 
-th{
+tr,th,td{
     border: 1px solid black;
-    
-    
 }
 
 table{

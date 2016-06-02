@@ -20,10 +20,28 @@ include 'System/VariablesSytem.php';
             include 'System/Menus.php';
         ?>
         <table>
-            <td>
-                <th> Nombre </th><th> Tipo de Dato </th><th> Dato </th><th> Opciones </th>
-            </td>
+            <tr>
+                <th> Nombre </th><th> Tipo de Dato </th><th> Dato </th><th> Opciones </th><th><button>Modificar</button></th>
+            </tr>
+            <?php
+                    include 'System/Conexion.php';
+            ?>
+            <tr>
+                <form action='crearfavorito.php' method='POST'>
+                <td><input type='text' name='nombre'></td>
+                <td><input type='text' name='tipoDato'></td>
+                <td><select name='categoria'>
+                        <option value='salud'>Salud</option>
+                        <option value='trabajo'>Trabajo</option>
+                        <option value='hobby'>Hobby</option>
+                        <option value='personal'>Personal</option>
+                        <option value='otros'>Otros</option>
+                </td>
+                <td><input type='text' name='Dato'></td>
+                <td><input type='submit'></td>
+            </tr>
         </table>
+        
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>    
     </body>
