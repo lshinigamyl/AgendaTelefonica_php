@@ -11,7 +11,10 @@ $server='mysql.hostinger.com.ar';
 $user='u626888219_dc';
 $password='282ANYFIO';
 $database_name='u626888219_dc';
-$query='SELECT DISTINCT c.nomContacto, (SELECT t2.dato FROM iddato t2 WHERE t2.idContacto = t.idContacto and t2.idTipo=1) AS Correo , (SELECT t2.dato FROM iddato t2 WHERE t2.idContacto = t.idContacto and t2.idTipo=2) AS Correo FROM iddato t, idcontacto c Where t.idContacto=c.idContacto';
+$query='SELECT DISTINCT c.nomContacto,
+	(SELECT d2.dato FROM dato d2 WHERE d2.idContacto = d.idContacto and d2.numDato= d.numDato and d2.idTipo=1) AS Correo ,
+	(SELECT d2.dato FROM dato d2 WHERE d2.idContacto = d.idContacto and d2.numDato= d.numDato and d2.idTipo=2) AS Correo 
+FROM dato d, contacto c Where d.idContacto=c.idContacto';
 $conexion = mysqli_connect($server, $user, $password);
 if(!$conexion){
     die('No se conecto'.mysql_error());
