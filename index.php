@@ -17,11 +17,11 @@ include 'System/VariablesSytem.php';
     </head>
     <body>
         <br/>
-        <h1 class="modal-title btn btn-primary ">Bienvenido a tu Agenda de Contactos</h1><div id="config"><button>Configuracion</button></div>
+        <h1 class="modal-title text-center h1">Bienvenido a tu Agenda de Contactos</h1><div id="config"><button class=" btn btn-primary">Configuracion</button></div>
         <br/>
         <table class="table table-hover table-bordered">
             <tr>
-                <th class="text-center"> Nombre </th> <th class="text-center" > Celular </th> <th class="text-center"> Correo </th> <th class="text-center"> Opciones </th>
+                <th class="text-center h2"> Nombre </th> <th class="text-center" > Celular </th> <th class="text-center"> Correo </th> <th class="text-center"> Opciones </th>
             </tr>
             <?php
                     include 'System/Conexion.php';
