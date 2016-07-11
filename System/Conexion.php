@@ -21,7 +21,7 @@ if(!$conexion){
 }
  //else {
  //   echo 'Te conectaste wiiii';  
-mysqli_select_db($conexion,$database_name);
+ mysqli_select_db($conexion,$database_name);
 //    if(mysql_query($query,$conexion)){
  //       echo 'Se ejecuto el query';
   //  }
@@ -29,7 +29,7 @@ mysqli_select_db($conexion,$database_name);
  //       echo 'No se ejecuto'.mysql_error();
  //   }
 //}
-$peticion=  mysqli_query($query);
+$peticion=  mysqli_query($conexion,$query);
 while ($row = mysqli_fetch_array($peticion)) {
     echo '<tr>';
     echo '<td>'.$row[0].'</td><td>'.$row[1].'</td><td>'.$row[2].'</td><td><a>Eliminar</a><br><a>Modificar</a></td>';
