@@ -16,31 +16,16 @@ include 'System/VariablesSytem.php';
         <link type="text/css" rel="stylesheet" href="css/personalido/index.css" >
     </head>
     <body>
-        <?php
-            include 'System/Menus.php';
-        ?>
+        <h1>Bienvenido a tu Agenda de Contactos</h1><div id="config"><button>Configuracion</button></div>
         <table>
             <tr>
-                <th> Nombre </th><th> Tipo de Dato </th><th> Dato </th><th> Opciones </th><th><button>Modificar</button></th>
+                <th> Nombre </th> <th> Celular </th> <th> Correo </th> <th> Opciones </th>
             </tr>
             <?php
                     include 'System/Conexion.php';
             ?>
-            <tr>
-                <form action='crearfavorito.php' method='POST'>
-                <td><input type='text' name='nombre'></td>
-                <td><input type='text' name='tipoDato'></td>
-                <td><select name='categoria'>
-                        <option value='salud'>Salud</option>
-                        <option value='trabajo'>Trabajo</option>
-                        <option value='hobby'>Hobby</option>
-                        <option value='personal'>Personal</option>
-                        <option value='otros'>Otros</option>
-                </td>
-                <td><input type='text' name='Dato'></td>
-                <td><input type='submit'></td>
-            </tr>
         </table>
+        <div id="add"><button>Agregar Contacto</button></div>
         
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>    

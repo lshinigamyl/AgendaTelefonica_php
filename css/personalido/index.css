@@ -1,3 +1,6 @@
+h1{
+    text-align: center;
+}
 #btnback, #btnnext{
     border-radius: 50%;
 }
@@ -41,10 +44,24 @@ body{
 
 tr,th,td{
     border: 1px solid black;
+    text-align: center;
 }
 
 table{
-    width: 100%;
+    width: 90%;
+    margin: auto;
+}
+
+#add{
+    margin: auto;
+    margin-top: 2%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+#config{
+    text-align: right;
+    margin: 1%;
+    margin-right: 3%;
 }
 
 //#contenedor{

@@ -11,7 +11,7 @@ $server='localhost';
 $user='root';
 $password='';
 $database_name='contactos';
-$query='SELECT c.nomContacto,t.nomtipo,d.dato FROM idcontacto c, idtipo t,iddato d WHERE c.idContacto = d.idcontacto and d.idtipo= t.idtipo';
+$query='SELECT DISTINCT c.nomContacto, (SELECT t2.dato FROM iddato t2 WHERE t2.idContacto = t.idContacto and t2.idTipo=1) AS Correo , (SELECT t2.dato FROM iddato t2 WHERE t2.idContacto = t.idContacto and t2.idTipo=2) AS Correo FROM iddato t, idcontacto c Where t.idContacto=c.idContacto';
 $conexion = mysql_connect($server, $user, $password);
 if(!$conexion){
     die('No se conecto'.mysql_error());
@@ -29,7 +29,7 @@ mysql_select_db($database_name,$conexion);
 $peticion=  mysql_query($query);
 while ($row = mysql_fetch_array($peticion)) {
     echo '<tr>';
-    echo '<td>'.$row[0].'</td><td>'.$row[1].'</td><td>'.$row[2].'</td>';
+    echo '<td>'.$row[0].'</td><td>'.$row[1].'</td><td>'.$row[2].'</td><td><a>Eliminar</a><br><a>Modificar</a></td>';
     echo '</tr>';
 }
 mysql_close($conexion);

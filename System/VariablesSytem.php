@@ -1,5 +1,5 @@
 <?php
-$TituloDePaginaWeb = 'Only DC';
+$TituloDePaginaWeb = 'Agenda PHP';
 /*Menus*/
 $Home='Inicio';
 $Opcion1='Comic';
