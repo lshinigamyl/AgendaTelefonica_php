@@ -16,10 +16,12 @@ include 'System/VariablesSytem.php';
         <link type="text/css" rel="stylesheet" href="css/personalido/index.css" >
     </head>
     <body>
-        <h1>Bienvenido a tu Agenda de Contactos</h1><div id="config"><button>Configuracion</button></div>
+        <br/>
+        <h1 class="modal-title btn btn-primary ">Bienvenido a tu Agenda de Contactos</h1><div id="config"><button>Configuracion</button></div>
+        <br/>
         <table class="table table-hover table-bordered">
             <tr>
-                <th> Nombre </th> <th> Celular </th> <th> Correo </th> <th> Opciones </th>
+                <th class="text-center"> Nombre </th> <th class="text-center" > Celular </th> <th class="text-center"> Correo </th> <th class="text-center"> Opciones </th>
             </tr>
             <?php
                     include 'System/Conexion.php';

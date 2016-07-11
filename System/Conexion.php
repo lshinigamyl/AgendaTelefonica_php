@@ -7,10 +7,10 @@ SELECT d.Dato FROM iddato d
 WHERE d.idcontacto = @id_contact AND d.idtipo=@id_tipo
 END;
  *  */
-$server='localhost';
-$user='root';
-$password='';
-$database_name='contactos';
+$server='mysql.hostinger.com.ar';
+$user='u626888219_dc';
+$password='282ANYFIO';
+$database_name='u626888219_dc';
 $query='SELECT DISTINCT c.nomContacto, (SELECT t2.dato FROM iddato t2 WHERE t2.idContacto = t.idContacto and t2.idTipo=1) AS Correo , (SELECT t2.dato FROM iddato t2 WHERE t2.idContacto = t.idContacto and t2.idTipo=2) AS Correo FROM iddato t, idcontacto c Where t.idContacto=c.idContacto';
 $conexion = mysqli_connect($server, $user, $password);
 if(!$conexion){
