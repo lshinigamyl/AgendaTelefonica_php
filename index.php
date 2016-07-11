@@ -17,7 +17,7 @@ include 'System/VariablesSytem.php';
     </head>
     <body>
         <h1>Bienvenido a tu Agenda de Contactos</h1><div id="config"><button>Configuracion</button></div>
-        <table>
+        <table class="table table-hover table-bordered">
             <tr>
                 <th> Nombre </th> <th> Celular </th> <th> Correo </th> <th> Opciones </th>
             </tr>
