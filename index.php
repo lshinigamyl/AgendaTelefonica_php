@@ -24,15 +24,13 @@ include './System/Conexion.php';
         <br/>
         <table class="table table-hover table-bordered">
             <tr>
-                <th class="text-center h2"> Nombre </th> <th class="text-center" > Celular </th> <th class="text-center"> Correo </th> <th class="text-center"> Opciones </th>
+                <th class="text-center h2"> Nombre </th> <th class="text-center h2" > Celular </th> <th class="text-center h2"> Correo </th> <th class="text-center h2"> Opciones </th>
             </tr>
             <?php
                    while ($row = mysqli_fetch_array($conexion->getPeticion())) {
-                   echo '<table style:"border:5px;">';
                    echo '<tr>';
                    echo '<td class="text-center">'.$row[0].'</td><td class="text-center">'.$row[1].'</td><td class="text-center">'.$row[2].'</td><td class="text-center"><a>Eliminar</a><br><a>Modificar</a></td>';
                    echo '</tr>';
-                   echo '<table>';
            }
            $conexion->CerrarConexion();        
            ?>
