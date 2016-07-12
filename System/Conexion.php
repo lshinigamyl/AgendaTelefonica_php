@@ -21,14 +21,14 @@ class Conecta {
         if(!$this->getConexion()){
              die('No se conecto'.mysqli_error());
         }  else {
-            echo 'se conecto en la verificacion<br>';
+//            echo 'se conecto en la verificacion<br>';
         }
     }
     public function SeleccionarBD(){
         if(mysqli_select_db($this->conexion,$this->database_name)){
             echo 'seleccionado correctamente<br>';
         }  else {
-            die('nose pudo seleccionar'.mysqli_errno());
+            //die('nose pudo seleccionar'.mysqli_errno());
             
         }
     }
@@ -115,7 +115,7 @@ class Conecta {
 
             
     public function __destruct() {
-        echo 'Se destruyo el objeto<br>';
+        //echo 'Se destruyo el objeto<br>';
     }
 
 }
