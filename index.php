@@ -22,7 +22,7 @@ include './System/Conexion.php';
     </head>
     <body >
         <br/>
-        <h1 class="modal-title text-center h1">Bienvenido a tu Agenda de Contactos</h1><div id="config"><button class=" btn btn-primary">Configuracion</button></div>
+        <h1 class="modal-title text-center h1 btn-primary">Bienvenido a tu Agenda de Contactos</h1><div id="config"><button class=" btn btn-primary">Configuracion</button></div>
         <br/>
         <div class="container" style="    padding-left: 15px;
     padding-right: 15px;">
