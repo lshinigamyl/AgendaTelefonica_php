@@ -20,12 +20,12 @@ include './System/Conexion.php';
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript"  src="js/bootstrap.min.js"></script>  
     </head>
+    <h1>agrgue esto</h1>
     <body >
         <br/>
         <h1 class="modal-title text-center h1 btn-primary">Bienvenido a tu Agenda de Contactos</h1><div id="config"><button class=" btn btn-primary">Configuracion</button></div>
         <br/>
-        <div class="container" style="    padding-left: 15px;
-    padding-right: 15px;">
+        <div class="container" style="    padding-left: 15px; padding-right: 15px;">
             <table class="table table-hover table-bordered">
             <tr>
                 <th class="text-center h2"> Nombre </th> <th class="text-center h2" > Celular </th> <th class="text-center h2"> Correo </th> <th class="text-center h2"> Opciones </th>
