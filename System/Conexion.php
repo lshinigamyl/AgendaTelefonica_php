@@ -26,9 +26,9 @@ class Conecta {
     }
     public function SeleccionarBD(){
         if(mysqli_select_db($this->conexion,$this->database_name)){
-            echo 'seleccionado correctamente<br>';
+            //echo 'seleccionado correctamente<br>';
         }  else {
-            //die('nose pudo seleccionar'.mysqli_errno());
+            die('nose pudo seleccionar'.mysqli_errno());
             
         }
     }
