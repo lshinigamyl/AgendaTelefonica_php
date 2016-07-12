@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <?php
 include 'System/VariablesSytem.php';
+include './System/Conexion.php';
+    $conexion = new Conecta();
+    $conexion->ProcesarConexion();
 ?>
 <html lang="en">
     <head>
@@ -24,8 +27,15 @@ include 'System/VariablesSytem.php';
                 <th class="text-center h2"> Nombre </th> <th class="text-center" > Celular </th> <th class="text-center"> Correo </th> <th class="text-center"> Opciones </th>
             </tr>
             <?php
-                    include 'System/Conexion.php';
-            ?>
+                   while ($row = mysqli_fetch_array($conexion->getPeticion())) {
+                   echo '<table style:"border:5px;">';
+                   echo '<tr>';
+                   echo '<td class="text-center">'.$row[0].'</td><td class="text-center">'.$row[1].'</td><td class="text-center">'.$row[2].'</td><td class="text-center"><a>Eliminar</a><br><a>Modificar</a></td>';
+                   echo '</tr>';
+                   echo '<table>';
+           }
+           $conexion->CerrarConexion();        
+           ?>
         </table>
         <div id="add"><button>Agregar Contacto</button></div>
         
