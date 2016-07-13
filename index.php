@@ -20,7 +20,6 @@ include './System/Conexion.php';
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript"  src="js/bootstrap.min.js"></script>  
     </head>
-    <h1>agrgue esto tambien</h1>
     <body >
         <br/>
         <h1 class="modal-title text-center h1 btn-primary">Bienvenido a tu Agenda de Contactos</h1><div id="config"><button class=" btn btn-primary">Configuracion</button></div>
