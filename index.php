@@ -25,7 +25,7 @@ include './System/Conexion.php';
         <h1 class="modal-title text-center h1 btn-primary">Bienvenido a tu Agenda de Contactos</h1><div id="config"><button class=" btn btn-primary">Configuracion</button></div>
         <br/>
         <div class="container" style="    padding-left: 15px; padding-right: 15px;">
-            <table class="table table-hover table-bordered">
+            <table class="table table-responsive table-hover table-bordered">
             <tr>
                 <th class="text-center h2"> Nombre </th> <th class="text-center h2" > Celular </th> <th class="text-center h2"> Correo </th> <th class="text-center h2"> Opciones </th>
             </tr>
